@@ -1,0 +1,44 @@
+.modal{
+    position: fixed;
+    z-index: 1;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+     background-color: rgba(0, 0, 0, 0.5);
+     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+  }
+
+  .modal form {
+      padding: 0.1em;
+  }
+
+  input  , select{
+    box-sizing: content-box;
+    width: 300px;
+    padding: 0.7em;
+    border: 0;
+    background-color: aliceblue;
+  }
+
+  .close-btn, .book-btn{
+      padding: 1em;
+      margin: 2px;
+      border: 0;
+      color: white;
+  }
+
+  .close-btn{
+      background-color: #b23850;
+  }
+
+  .book-btn{
+      background-color: #15db95;
+  }
+
+  label, button{
+    font-weight: bold;
+  }

@@ -6,7 +6,7 @@ const Sidebar = () => {
     return (
         <React.Fragment>
             <div className="sidebar" id="sidebar">
-                <div className="center">
+                <div className="">
                     <div className="logo" />
                     <ul>
                         <li>Home</li>

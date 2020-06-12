@@ -1,5 +1,5 @@
 .sidebar{
-    background-color: grey;
+    background-color: #0b0c10;
     height: 100vh;
    min-width: 300px;
    padding: 1em;
@@ -8,12 +8,13 @@
     text-align: justify;
 }
 
-
 ul li {
     list-style-type: none;
     line-height: 3.3rem;
     display: block;
     width: initial;
+    color: whitesmoke;
+    
 }
 ul {
     padding: 1em;
@@ -31,4 +32,10 @@ ul {
     bottom: 10px;
     left: 10px;
     
+}
+
+@media only screen and (max-width: 660px){
+    .sidebar{
+        display: none;
+    }
 }

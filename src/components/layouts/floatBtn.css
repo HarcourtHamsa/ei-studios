@@ -1,0 +1,19 @@
+.floatBtn{
+    position: absolute;
+    top: 80%;
+    right: 1%;
+    width: 100px;
+    padding: 12px 25px;
+    align-items: center;
+    border: 0;
+    background-color: #0b0c10;
+    color: aliceblue;
+    text-align: center;
+    cursor: pointer;
+}
+
+.floatBtn:focus::after,
+.floatBtn:active::after
+{
+    border: 0;
+}
