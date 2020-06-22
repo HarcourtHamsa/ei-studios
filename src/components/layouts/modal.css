@@ -4,7 +4,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
-     background-color: rgba(0, 0, 0, 0.5);
+     background-color: rgba(185, 183, 183, 0.5);
      top: 0;
     left: 0;
     right: 0;
@@ -21,7 +21,7 @@
     width: 300px;
     padding: 0.7em;
     border: 0;
-    background-color: aliceblue;
+    background-color: whitesmoke;
   }
 
   .close-btn, .book-btn{
@@ -32,9 +32,9 @@
   }
 
   .close-btn{
-      background-color: #b23850;
+      background-color: red;
   }
 
   .book-btn{
-      background-color: #15db95;
+      background-color: green;
   }

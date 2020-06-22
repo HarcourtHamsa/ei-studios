@@ -1,29 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import Sidebar from "./components/layouts/Sidebar"
-import Main from './components/layouts/Main';
+import Main from "./components/layouts/Main"
+import Loader from "./components/layouts/Loader"
+import FloatingBtn from "./components/layouts/FloatingBtn"
 import './App.css';
-import FloatingBtn from './components/layouts/FloatingBtn';
 
+function App () {
+  const [loading, setLoading] = useState (true);
 
-function App() {
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false)
-    }, 1000 * 3)
-  }, [])
+  useEffect (() => {
+    setTimeout (() => {
+      setLoading (false);
+    }, 1000 * 3);
+  }, []);
 
   if (loading) {
-    return <p className="center">Eddie is thinking ...</p>
+    return <Loader />;
   }
 
   return (
     <div className="App">
-      <div>
+      <div className="side">
         <Sidebar />
       </div>
-      <div>
+      <div className="main">
         <Main />
         <FloatingBtn />
       </div>

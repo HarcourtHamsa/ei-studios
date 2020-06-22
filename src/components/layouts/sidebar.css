@@ -1,8 +1,9 @@
-.sidebar{
+.sidebar {
     background-color: #0b0c10;
     height: 100vh;
-   min-width: 300px;
-   padding: 1em;
+    position: fixed;
+    min-width: 240px;
+    padding: 1em;
     overflow: hidden;
     display: block;
     text-align: justify;
@@ -14,28 +15,35 @@ ul li {
     display: block;
     width: initial;
     color: whitesmoke;
-    
+    padding: 1em;
 }
+
+ul li:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
 ul {
     padding: 1em;
 }
 
-.logo{
+.logo {
     width: 100px;
     height: 100px;
     background-color: aliceblue;
     border-radius: 50%;
 }
 
-.fixed-bottom{
+.fixed-bottom {
     position: absolute;
-    bottom: 10px;
+    bottom: 40px;
     left: 10px;
-    
+    color: white;
+    padding-right: 1em;
 }
 
-@media only screen and (max-width: 660px){
-    .sidebar{
+@media only screen and (max-width: 660px) {
+    .sidebar {
         display: none;
     }
 }

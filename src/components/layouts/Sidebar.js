@@ -1,28 +1,48 @@
-import React from 'react'
-import './sidebar.css'
+import React, {useState} from 'react';
+import Modal from './Modal';
+import {
+  RiFacebookBoxLine,
+  RiInstagramLine,
+  RiTwitterLine,
+} from 'react-icons/ri';
+
+import './sidebar.css';
 
 const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState (false);
 
-    return (
-        <React.Fragment>
-            <div className="sidebar" id="sidebar">
-                <div className="">
-                    <div className="logo" />
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Portfolio</li>
-                        <li>Place bookings</li>
-                    </ul>
-                </div>
+  const openModal = () => {
+    setIsOpen (true);
+  };
 
-                <div className="fixed-bottom">
-                    <button>Fcebook</button>
-                    <button>Instagrram</button>
-                </div>
-            </div>
-        </React.Fragment>
-    )
-}
+  const closeModal = () => {
+    setIsOpen (false);
+  };
 
-export default Sidebar
+  return (
+    <React.Fragment>
+      {isOpen ? <Modal closeModal={closeModal} /> : null}
+
+      <div className="sidebar" id="sidebar">
+        <div className="">
+          <div className="logo" />
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Portfolio</li>
+            <li onClick={openModal}>Place bookings</li>
+          </ul>
+        </div>
+
+        <div className="fixed-bottom icons">
+          <RiFacebookBoxLine size="20" />
+          <RiInstagramLine size="20" />
+          <RiTwitterLine size="20" />
+        </div>
+      </div>
+
+    </React.Fragment>
+  );
+};
+
+export default Sidebar;

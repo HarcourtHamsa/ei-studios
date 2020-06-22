@@ -10,22 +10,22 @@ function Modal(props) {
             <div className="modal">
                 <div style={{
                     padding: '20px',
-                    background: '#0b0c10',
+                    background: 'white',
                     display: 'inline-block',
                     minHeight: '300px',
                     margin: '1rem',
                     position: 'relative',
                     minWidth: '300px',
                     justifySelf: 'center',
-                    color: 'white',
-                    border: '3px solid black'
+                    color: 'black',
+                    
                 }}>
                     {props.children}
 
                     {props.avoidEmail ?
                         null :
                         <div>
-                            <h3>Book a session today!</h3>
+                            <p>Book a session today!</p>
                             <form onSubmit={props.onClose}>
                                 <label>Full name</label><br />
                                 <input type="text" placeholder="Enter your name" required /><br /><br />

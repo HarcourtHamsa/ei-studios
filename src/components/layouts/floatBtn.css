@@ -1,5 +1,5 @@
 .floatBtn{
-    position: absolute;
+    position: fixed;
     top: 80%;
     right: 1%;
     width: 100px;
@@ -10,6 +10,7 @@
     color: aliceblue;
     text-align: center;
     cursor: pointer;
+    
 }
 
 .floatBtn:focus::after,
