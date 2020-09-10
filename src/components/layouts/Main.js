@@ -10,7 +10,7 @@ const Main = () => {
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-white mb-3 p-3 small">
-        <a class="navbar-brand" href="/">Eddies Illution Photography</a>
+        <a class="navbar-brand" href="/">Logo</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -24,7 +24,7 @@ const Main = () => {
         </button>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0 float-right">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
               <a class="nav-link" href="/">
                 Home <span class="sr-only">(current)</span>
