@@ -1,36 +1,28 @@
-html, body{
-    padding: 0;
-    margin: 0;
+html,
+body {
+  padding: 0;
+  margin: 0;
 }
 
-.App{
-    display: flex;
-    height: 100vh;
-    flex-flow: row wrap;
-
+.App {
+  display: flex;
+  height: 100vh;
+  flex-flow: row wrap;
 }
 
-.App > div {
-    width: 100px;
-    height: 100vh;
-    
+.text-center {
+  text-align: center;
 }
 
-.main{
-    flex-basis: 80%;
-    height: 100vh;
+.mt-1 {
+  margin-top: 1rem;
 }
 
-.side{
-    flex-basis: 20%;
-    height: 100vh;
-}
-
-@media only screen and (max-width:600px){
-    .side{
-        display: none
-    }
-    .main{
-        flex-basis: 100%;
-    }
+@media only screen and (max-width: 600px) {
+  .side {
+    display: none;
+  }
+  .main {
+    flex-basis: 100%;
+  }
 }
